@@ -29,8 +29,9 @@ fetch('img/fuji.png')
     .then(res=> {
         res.arrayBuffer().then((buffer)=>{
             const imageData = buffer;
-
+            //IMAGE CANNOT BE ACCESSED
             let image = new PNG({ filterType: 4}).parse(imageData, (error, data)=>{
+                //INSIDE THIS CALLBACK
                 const terrain = mapboxTerrainToGrid(image);
                 const martini = new Martini(image.width + 1);
                 const tile = martini.createTile(terrain);

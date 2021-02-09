@@ -1,0 +1,29 @@
+{
+  "name": "martini-trial",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start:dev": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "@mapbox/martini": "^0.2.0",
+    "fs": "0.0.1-security",
+    "pngjs": "^6.0.0",
+    "three": "^0.125.2"
+  }
+}
